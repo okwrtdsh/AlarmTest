@@ -15,6 +15,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!-- add receiver -->
+        <receiver android:name=".AlarmBroadcastReceiver" />
     </application>
 
 </manifest>

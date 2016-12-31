@@ -12,7 +12,41 @@
     tools:context="com.github.okwrtdsh.alarmtest.MainActivity">
 
     <TextView
+        android:id="@+id/text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:text="REMINDER" />
+
+    <EditText
+        android:id="@+id/edit_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/time_picker"
+        android:layout_alignEnd="@+id/time_picker"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/text_view" />
+
+    <TimePicker
+        android:id="@+id/time_picker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true" />
+
+    <Button
+        android:id="@+id/button_set"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:text="SET" />
+
+    <Button
+        android:id="@+id/button_cancel"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@id/time_picker"
+        android:layout_alignTop="@id/button_set"
+        android:text="CANCEL" />
+
 </RelativeLayout>
